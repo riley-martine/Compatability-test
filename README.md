@@ -19,4 +19,6 @@ Find the right place in the code to put the column numbers for these. You can co
 
 To run: put run.sh and the .py file in the same directory and run the run.sh file.
 
+You will have to edit the sh file to get the download url for your spreadsheet. 
+
 May have to chmod +x run.sh:wq
