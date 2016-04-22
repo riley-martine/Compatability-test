@@ -1,16 +1,16 @@
 from __future__ import division
 import csv
+from tabulate import tabulate
+import smtplib
 from email.mime.text import MIMEText
 from datetime import date
-import smtplib
-from tabulate import tabulate
 
 with open('spreadsheet.csv', 'rb') as f: #open spreadsheet.csv
     reader = csv.reader(f)
     all_data = list(reader) #put all the data in array all_data
 table = []
-start = 4 #start with person in row number 'start'
-while start < len(all_data):
+start = 4 #start with person in row number 'start.' Set to first person not for testing.
+while start < len(all_data):                                         #this prints out a nice table of all the names and emails. May have to edit this to make the name thignies be in the right column (96/2)
 	table += [[start, all_data[start][96], all_data[start][2]]]
 	start += 1
 
@@ -35,6 +35,7 @@ matchnum = 0 #define matchnum, the number of match points awarded
 total_possible = 0 #define total_possible, the total number of match points available. 
 person1_score = 0 #define p1_score, the score of p1
 person2_score = 0 #same but for p2
+
 bothlike += person1_name + '\n' + person1_row[3] + '\n\n' #add phone #s
 bothlike += person2_name + '\n' + person2_row[3] + '\n\n'
 
@@ -211,7 +212,6 @@ babygrace += str(newnum) + '% match, unadjusted\n'
 newnum = (newnum / 2) + 50
 bothlike += str(newnum) + '% match, adjusted\n'
 babygrace += str(newnum) + '% match, adjusted\n'
-
 
 
 
