@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d469de280d8d4364ae46169c58c6b9f6)](https://www.codacy.com/app/***REMOVED***/Compatability-test?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=riley-martine/Compatability-test&amp;utm_campaign=Badge_Grade)
 # Compatability-test
 Test for two people matching, using google spreadsheet/forms for data. 
 
